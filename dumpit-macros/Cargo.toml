@@ -1,0 +1,19 @@
+[package]
+name                 = "dumpit-macros"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+keywords.workspace   = true
+categories.workspace = true
+description          = "Proc-macro implementation for the dumpit crate. Do not use directly."
+readme               = "../README.md"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+syn         = { version = "2", features = ["full", "extra-traits"] }
+quote       = "1"
+proc-macro2 = "1"

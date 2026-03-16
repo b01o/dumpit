@@ -1,0 +1,26 @@
+[workspace]
+members = [".", "dumpit-macros"]
+
+[workspace.package]
+version    = "0.1.0"
+edition    = "2024"
+authors    = ["b01o <b01o@proton.me>"]
+license    = "MIT OR Apache-2.0"
+repository = "https://github.com/b01o/dumpit"
+keywords   = ["debug", "derive", "macro", "formatting", "tracing"]
+categories = ["development-tools::debugging", "rust-patterns"]
+
+[package]
+name                 = "dumpit"
+version.workspace    = true
+edition.workspace    = true
+authors.workspace    = true
+license.workspace    = true
+repository.workspace = true
+keywords.workspace   = true
+categories.workspace = true
+description          = "Customizable `core::fmt::Debug` derive macro with field-level formatting options."
+readme               = "README.md"
+
+[dependencies]
+dumpit-macros = { path = "dumpit-macros", version = "=0.1.0" }
